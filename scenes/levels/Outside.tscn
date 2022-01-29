@@ -53,7 +53,7 @@ pending_text = "You forgot? I want 3 Generic Items"
 position = Vector2( 1493.86, 2579.34 )
 
 [node name="house" parent="level" instance=ExtResource( 5 )]
-position = Vector2( 908.151, 406.509 )
+position = Vector2( 880.151, 406.509 )
 to_scene = "res://scenes/levels/HouseInside.tscn"
 
 [node name="house_outside" type="Position2D" parent="level/house" groups=[
@@ -101,7 +101,7 @@ position = Vector2( 484.729, 1765.92 )
 position = Vector2( 295.304, 2022.2 )
 
 [node name="grass11" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 540.443, 2111.34 )
+position = Vector2( 540.443, 2091.34 )
 
 [node name="grass12" parent="level" instance=ExtResource( 3 )]
 position = Vector2( 61.3066, 1788.2 )
