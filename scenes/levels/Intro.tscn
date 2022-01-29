@@ -70,6 +70,9 @@ margin_right = 300.0
 margin_bottom = 191.0
 texture = ExtResource( 1 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="logo-studio" type="TextureRect" parent="."]
 anchor_left = 0.5
