@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://art/lifebar.png" type="Texture" id=1]
+[ext_resource path="res://art/lifebar_fill.png" type="Texture" id=2]
+[ext_resource path="res://art/HP.png" type="Texture" id=3]
+[ext_resource path="res://scenes/misc/HPbar.gd" type="Script" id=4]
+
+[node name="HPbar" type="TextureRect"]
+margin_right = 300.0
+margin_bottom = 300.0
+texture = ExtResource( 1 )
+expand = true
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+margin_left = 74.8216
+margin_right = 224.822
+margin_bottom = 300.0
+min_value = 1.0
+max_value = 20.0
+value = 20.0
+exp_edit = true
+texture_progress = ExtResource( 2 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 19.75
+margin_top = 138.5
+margin_right = 61.75
+margin_bottom = 158.5
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

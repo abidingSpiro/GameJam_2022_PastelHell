@@ -43,6 +43,7 @@ size_flags_vertical = 3
 alignment = 1
 
 [node name="Quests" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+visible = false
 margin_right = 490.0
 margin_bottom = 460.0
 size_flags_horizontal = 3
@@ -69,6 +70,7 @@ Quest 3
 Quest 4"
 
 [node name="Inventory" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+visible = false
 margin_left = 494.0
 margin_right = 984.0
 margin_bottom = 460.0
@@ -98,4 +100,5 @@ margin_bottom = 560.0
 custom_fonts/font = ExtResource( 2 )
 text = "EXIT"
 flat = true
+
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_Exit_pressed"]

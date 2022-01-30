@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/PastellSong_Layer1-2-3.ogg-92f6c054c9cb06ccc43ef87ce971f33f.oggstr"
+
+[deps]
+
+source_file="res://music/PastellSong_Layer1-2-3.ogg"
+dest_files=[ "res://.import/PastellSong_Layer1-2-3.ogg-92f6c054c9cb06ccc43ef87ce971f33f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
