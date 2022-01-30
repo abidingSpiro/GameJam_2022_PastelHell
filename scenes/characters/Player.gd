@@ -10,7 +10,7 @@ and probably both should extend some parent script
 
 export(int) var WALK_SPEED = 500 # pixels per second
 export(int) var ROLL_SPEED = 1000 # pixels per second
-export(int) var hitpoints = 20
+export(int) var hitpoints = 10
 
 var linear_vel = Vector2()
 var roll_direction = Vector2.DOWN
@@ -158,7 +158,6 @@ func despawn():
 	yield(get_tree().create_timer(5.0), "timeout")
 	get_tree().reload_current_scene()
 	pass
-
 
 
 func _on_hurtbox_area_entered(area):
