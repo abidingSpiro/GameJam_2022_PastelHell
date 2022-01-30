@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=29 format=2]
+[gd_resource type="TileSet" load_steps=24 format=2]
 
 [ext_resource path="res://art/CosmicLilac_Tiles.png" type="Texture" id=1]
 
@@ -60,28 +60,13 @@ points = PoolVector2Array( 0.696297, 0.219353, 4.86852, 0.219353, 4.86852, 5.602
 points = PoolVector2Array( 15.9047, 15.8316, 10.5212, 15.8316, 10.5212, 9.23674, 15.9047, 9.23674 )
 
 [sub_resource type="ConvexPolygonShape2D" id=24]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+points = PoolVector2Array( 0, 0, 13.889, 0.181023, 13.566, 16, 0.807037, 15.0395 )
 
 [sub_resource type="ConvexPolygonShape2D" id=25]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+points = PoolVector2Array( 0, 0, 11.7723, 0, 12, 14.5131, 0.143875, 15 )
 
 [sub_resource type="ConvexPolygonShape2D" id=26]
 points = PoolVector2Array( 15.8409, 8.60623, 0.363266, 8.74081, 0, 0.26178, 15.7063, 0.26178 )
-
-[sub_resource type="ConvexPolygonShape2D" id=27]
-points = PoolVector2Array( 15.2158, 15.3356, 0.545753, 15.3356, 0.545753, 2.54977, 15.2158, 2.54977 )
-
-[sub_resource type="ConvexPolygonShape2D" id=28]
-points = PoolVector2Array( 8.23322, 3.22272, 8.09864, -0.00740051, 15.6356, 0.26178, 15.6356, 15.3356, 0.157951, 15.3356, 0.292534, 3.49188 )
-
-[sub_resource type="ConvexPolygonShape2D" id=29]
-points = PoolVector2Array( 5.50954, -0.00740051, 5.50954, 4.43401, 15.469, 4.56859, 15.7382, 15.874, 0.664368, 15.4702, 0.395195, 0.26178 )
-
-[sub_resource type="ConvexPolygonShape2D" id=30]
-points = PoolVector2Array( 0.529785, 0.380402, 6.85542, 0.380402, 6.85542, 15.5888, 0.529785, 15.5888 )
-
-[sub_resource type="ConvexPolygonShape2D" id=31]
-points = PoolVector2Array( 15.6356, 15.858, 7.02193, 15.858, 7.02193, 0, 15.6356, 0 )
 
 [resource]
 2/name = "CosmicLilac_Tiles.png 2"
@@ -102,7 +87,7 @@ points = PoolVector2Array( 15.6356, 15.858, 7.02193, 15.858, 7.02193, 0, 15.6356
 3/texture = ExtResource( 1 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
-3/region = Rect2( 160, 112, 16, 16 )
+3/region = Rect2( 144, 112, 16, 16 )
 3/tile_mode = 0
 3/occluder_offset = Vector2( 0, 0 )
 3/navigation_offset = Vector2( 0, 0 )
@@ -255,7 +240,7 @@ points = PoolVector2Array( 15.6356, 15.858, 7.02193, 15.858, 7.02193, 0, 15.6356
 5/texture = ExtResource( 1 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
-5/region = Rect2( 144, 80, 16, 16 )
+5/region = Rect2( 145, 80, 14, 16 )
 5/tile_mode = 0
 5/occluder_offset = Vector2( 0, 0 )
 5/navigation_offset = Vector2( 0, 0 )
@@ -276,7 +261,7 @@ points = PoolVector2Array( 15.6356, 15.858, 7.02193, 15.858, 7.02193, 0, 15.6356
 6/texture = ExtResource( 1 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
-6/region = Rect2( 0, 96, 16, 16 )
+6/region = Rect2( 1, 97, 12, 15 )
 6/tile_mode = 0
 6/occluder_offset = Vector2( 0, 0 )
 6/navigation_offset = Vector2( 0, 0 )
@@ -314,57 +299,3 @@ points = PoolVector2Array( 15.6356, 15.858, 7.02193, 15.858, 7.02193, 0, 15.6356
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 7/z_index = 0
-8/name = "CosmicLilac_Tiles.png 8"
-8/texture = ExtResource( 1 )
-8/tex_offset = Vector2( 0, 0 )
-8/modulate = Color( 1, 1, 1, 1 )
-8/region = Rect2( 32, 64, 48, 32 )
-8/tile_mode = 1
-8/autotile/bitmask_mode = 0
-8/autotile/bitmask_flags = [ Vector2( 0, 0 ), 260, Vector2( 0, 1 ), 4, Vector2( 1, 0 ), 325, Vector2( 1, 1 ), 5, Vector2( 2, 0 ), 65, Vector2( 2, 1 ), 1 ]
-8/autotile/icon_coordinate = Vector2( 1, 1 )
-8/autotile/tile_size = Vector2( 16, 16 )
-8/autotile/spacing = 0
-8/autotile/occluder_map = [  ]
-8/autotile/navpoly_map = [  ]
-8/autotile/priority_map = [  ]
-8/autotile/z_index_map = [  ]
-8/occluder_offset = Vector2( 0, 0 )
-8/navigation_offset = Vector2( 0, 0 )
-8/shape_offset = Vector2( 0, 0 )
-8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-8/shape = SubResource( 27 )
-8/shape_one_way = false
-8/shape_one_way_margin = 1.0
-8/shapes = [ {
-"autotile_coord": Vector2( 1, 1 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 27 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-}, {
-"autotile_coord": Vector2( 2, 1 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 28 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-}, {
-"autotile_coord": Vector2( 0, 1 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 29 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-}, {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 30 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-}, {
-"autotile_coord": Vector2( 2, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 31 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
-} ]
-8/z_index = 0
