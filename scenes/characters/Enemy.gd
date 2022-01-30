@@ -20,9 +20,11 @@ export(String, "up", "down", "left", "right") var facing = "down"
 var anim = ""
 var new_anim = ""
 
-enum { STATE_IDLE, STATE_WALKING, STATE_ATTACK, STATE_ROLL, STATE_DIE, STATE_HURT }
+enum { STATE_IDLE, STATE_WALKING, STATE_ATTACK, STATE_ROLL, STATE_DIE, STATE_HURT, STATE_CHASE }
 
 var state = STATE_IDLE
+onready var playerDetectionZone= $PlayerDetectionZone
+
 
 func _ready():
 	randomize()
@@ -32,6 +34,7 @@ func _physics_process(_delta):
 	match state:
 		STATE_IDLE:
 			new_anim = "idle_" + facing
+			seek_player()
 		STATE_WALKING:
 			linear_vel = move_and_slide(linear_vel)
 			
@@ -88,15 +91,22 @@ func _physics_process(_delta):
 			new_anim = "die"
 		STATE_HURT:
 			new_anim = "hurt"
-	
-
-
+		STATE_CHASE:
+			var player= playerDetectionZone.player
+			if player != null:
+				var direction = (player.global_position-global_position).normalized()
+				linear_vel=linear_vel.move_toward(direction * WALK_SPEED,ROLL_SPEED*_delta)
+							
+			linear_vel=move_and_slide(linear_vel)
 	if new_anim != anim:
 		anim = new_anim
 		$anims.play(anim)
 	pass
 
-
+func seek_player():
+	if playerDetectionZone.can_see_player():
+		state = STATE_CHASE
+	
 func goto_idle():
 	state = STATE_IDLE
 

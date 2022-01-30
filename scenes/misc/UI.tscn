@@ -18,6 +18,10 @@ extents = Vector2( 30, 100 )
 [node name="UI" type="CanvasLayer"]
 
 [node name="Dialog_box" parent="." instance=ExtResource( 1 )]
+margin_left = 76.0
+margin_top = -153.0
+margin_right = 76.0
+margin_bottom = 21.0002
 
 [node name="Stats" parent="." instance=ExtResource( 2 )]
 
@@ -29,6 +33,7 @@ margin_right = 14.0
 
 [node name="TouchInterface" type="Node2D" parent="."]
 modulate = Color( 1, 1, 1, 0.501961 )
+position = Vector2( 202, 14 )
 script = ExtResource( 7 )
 
 [node name="interact" type="TouchScreenButton" parent="TouchInterface"]
@@ -56,7 +61,7 @@ action = "roll"
 visibility_mode = 1
 
 [node name="slash" type="TouchScreenButton" parent="TouchInterface"]
-position = Vector2( 816.582, 336.136 )
+position = Vector2( 806.582, 330.136 )
 scale = Vector2( 1.64391, 1.64391 )
 normal = ExtResource( 9 )
 bitmask = ExtResource( 8 )

@@ -867,7 +867,6 @@ properties = [ "linear_vel", "roll_direction", "facing" ]
 enabled = false
 
 [node name="hurtbox" type="Area2D" parent="."]
-collision_mask = 32
 __meta__ = {
 "_editor_description_": ""
 }
