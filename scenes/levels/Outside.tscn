@@ -1,46 +1,22 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://scenes/props/MushroomBig.tscn" type="PackedScene" id=1]
+[ext_resource path="res://art/cosmicLilac.tres" type="TileSet" id=1]
 [ext_resource path="res://scenes/misc/UI.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/props/Grass.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/characters/Enemy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/props/House.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/misc/MusicTrack.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/props/Flower.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/characters/Player.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/props/MushroomSmall.tscn" type="PackedScene" id=9]
-[ext_resource path="res://textures/props/puddle_big.png" type="Texture" id=10]
-[ext_resource path="res://textures/props/puddle_small.png" type="Texture" id=11]
 [ext_resource path="res://scenes/items/Item.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/characters/Npc.tscn" type="PackedScene" id=13]
 [ext_resource path="res://scenes/misc/Quest.tscn" type="PackedScene" id=14]
 
 [node name="Outside" type="Node"]
 
-[node name="puddle_big" type="Sprite" parent="."]
-position = Vector2( 661.445, 950.947 )
-texture = ExtResource( 10 )
-
-[node name="puddle_small" type="Sprite" parent="."]
-position = Vector2( 1329.08, 687.921 )
-scale = Vector2( 0.995735, 0.995735 )
-texture = ExtResource( 11 )
-
-[node name="puddle_small2" type="Sprite" parent="."]
-position = Vector2( 441.76, 1575.24 )
-scale = Vector2( 0.995735, 0.995735 )
-texture = ExtResource( 11 )
-
-[node name="puddle_big2" type="Sprite" parent="."]
-position = Vector2( 1782.78, 1096.72 )
-scale = Vector2( 1.97507, 1.97507 )
-texture = ExtResource( 10 )
-
 [node name="level" type="YSort" parent="."]
 position = Vector2( 208.024, -128.355 )
 
 [node name="Jorgito" parent="level" instance=ExtResource( 13 )]
-position = Vector2( 2062.51, 2957.82 )
+position = Vector2( 2639.51, 2493.96 )
 character_name = "Jorgito"
 
 [node name="Quest" parent="level/Jorgito" instance=ExtResource( 14 )]
@@ -50,10 +26,10 @@ initial_text = "TLDR; bring me 3 Generic Items"
 pending_text = "You forgot? I want 3 Generic Items"
 
 [node name="Character" parent="level" instance=ExtResource( 8 )]
-position = Vector2( 1493.86, 2579.34 )
+position = Vector2( 407.887, 1495.24 )
 
 [node name="house" parent="level" instance=ExtResource( 5 )]
-position = Vector2( 880.151, 406.509 )
+position = Vector2( 4776.15, 1622.51 )
 to_scene = "res://scenes/levels/HouseInside.tscn"
 
 [node name="house_outside" type="Position2D" parent="level/house" groups=[
@@ -61,86 +37,17 @@ to_scene = "res://scenes/levels/HouseInside.tscn"
 ]]
 position = Vector2( -2.12201, 173.199 )
 
-[node name="flower" parent="level" instance=ExtResource( 7 )]
-position = Vector2( -495.829, 1186.5 )
-
-[node name="flower2" parent="level" instance=ExtResource( 7 )]
-position = Vector2( 2000.14, 283.939 )
-
-[node name="flower3" parent="level" instance=ExtResource( 7 )]
-position = Vector2( 3047.55, 841.074 )
-
-[node name="grass" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 1454.14, 1621.06 )
-
-[node name="grass2" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 1610.14, 1777.06 )
-
-[node name="grass3" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 1721.57, 2011.06 )
-
-[node name="grass4" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 1844.14, 1598.78 )
-
-[node name="grass5" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 1977.85, 1821.63 )
-
-[node name="grass6" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 2278.7, 1520.78 )
-
-[node name="grass7" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 807.868, 1777.06 )
-
-[node name="grass8" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 741.012, 2011.06 )
-
-[node name="grass9" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 484.729, 1765.92 )
-
-[node name="grass10" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 295.304, 2022.2 )
-
-[node name="grass11" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 540.443, 2091.34 )
-
-[node name="grass12" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 61.3066, 1788.2 )
-
-[node name="grass13" parent="level" instance=ExtResource( 3 )]
-position = Vector2( -217.261, 2122.48 )
-
-[node name="mushroom_big" parent="level" instance=ExtResource( 1 )]
-position = Vector2( 2278.7, 2345.34 )
-
-[node name="mushroom_small" parent="level" instance=ExtResource( 9 )]
-position = Vector2( 1955.56, 2467.91 )
-
-[node name="mushroom_small2" parent="level" instance=ExtResource( 9 )]
-position = Vector2( 2546.13, 2601.62 )
-
-[node name="grass14" parent="level" instance=ExtResource( 3 )]
-position = Vector2( -369.359, -286.035 )
-
-[node name="grass15" parent="level" instance=ExtResource( 3 )]
-position = Vector2( -921.388, -934.964 )
-
-[node name="grass16" parent="level" instance=ExtResource( 3 )]
-position = Vector2( -1711.26, -1401.84 )
-
 [node name="enemy" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 909.861, 2408.58 )
-
-[node name="enemy2" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 1401.15, 2054.49 )
+position = Vector2( -889.016, 824.664 )
 
 [node name="enemy3" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 170.712, 2514.8 )
+position = Vector2( -2081.29, 1390.8 )
 
 [node name="enemy4" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 887.73, 2775.94 )
+position = Vector2( 1413.82, 1808.62 )
 
 [node name="enemy5" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 1352.46, 2961.83 )
+position = Vector2( 800.46, 909.83 )
 
 [node name="enemy6" parent="level" instance=ExtResource( 4 )]
 position = Vector2( 144.914, 746.878 )
@@ -150,18 +57,6 @@ position = Vector2( 1766.1, 666.819 )
 
 [node name="enemy8" parent="level" instance=ExtResource( 4 )]
 position = Vector2( 2446.6, 633.461 )
-
-[node name="Item" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 1032.97, 1956.3 )
-
-[node name="Item2" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 1234.96, 1710.6 )
-item_type = "Magic Sword"
-
-[node name="Item3" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 969.666, 1659.36 )
-item_type = "Coso"
-amount = 3
 
 [node name="Item6" parent="level" instance=ExtResource( 12 )]
 position = Vector2( 2636.78, 2137.18 )
@@ -187,7 +82,15 @@ position = Vector2( 2847.81, 2114.57 )
 item_type = "Coso"
 amount = 3
 
+[node name="TileMap" type="TileMap" parent="level"]
+scale = Vector2( 8, 8 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+format = 1
+tile_data = PoolIntArray( -65514, 1, 0, -65513, 1, 1, -65512, 1, 1, -65511, 1, 1, -65510, 1, 1, -65509, 1, 1, -65508, 1, 2, 65532, 1, 0, 65533, 1, 1, 65534, 1, 1, 65535, 1, 1, 0, 1, 1, 1, 1, 2, 21, 1, 0, 22, 1, 65540, 23, 1, 65537, 24, 1, 65537, 25, 1, 65537, 26, 1, 65537, 27, 1, 65537, 28, 1, 65538, 131068, 1, 65536, 131069, 1, 3, 131070, 1, 131073, 131071, 1, 4, 65536, 1, 65537, 65537, 1, 65539, 65538, 1, 1, 65539, 1, 1, 65540, 1, 2, 65554, 1, 0, 65555, 1, 1, 65556, 1, 1, 65557, 1, 65540, 65558, 1, 65537, 65559, 1, 65537, 65560, 1, 65537, 65561, 1, 65537, 65562, 1, 65537, 65563, 1, 65537, 65564, 1, 65538, 196603, 1, 0, 196604, 1, 65540, 196605, 1, 65538, 196607, 1, 65536, 131072, 1, 65537, 131073, 1, 65537, 131074, 1, 65537, 131075, 1, 65537, 131076, 1, 65538, 131089, 1, 0, 131090, 1, 65540, 131091, 1, 65537, 131092, 1, 65537, 131093, 1, 65537, 131094, 1, 65537, 131095, 1, 65537, 131096, 1, 65537, 131097, 1, 3, 131098, 1, 131073, 131099, 1, 131073, 131100, 1, 131074, 262139, 1, 65536, 262140, 1, 65537, 262141, 1, 65538, 262143, 1, 65536, 196608, 1, 65537, 196609, 1, 65537, 196610, 1, 65537, 196611, 1, 65537, 196612, 1, 65538, 196625, 1, 65536, 196626, 1, 65537, 196627, 1, 65537, 196628, 1, 65537, 196629, 1, 65537, 196630, 1, 65537, 196631, 1, 65537, 196632, 1, 65537, 196633, 1, 65538, 327669, 1, 0, 327670, 1, 1, 327671, 1, 1, 327672, 1, 1, 327673, 1, 1, 327674, 1, 1, 327675, 1, 65540, 327676, 1, 3, 327677, 1, 131074, 327679, 1, 131072, 262144, 1, 131073, 262145, 1, 131073, 262146, 1, 131073, 262147, 1, 131073, 262148, 1, 131074, 262158, 1, 0, 262159, 1, 1, 262160, 1, 1, 262161, 1, 65540, 262162, 1, 65537, 262163, 1, 65537, 262164, 1, 65537, 262165, 1, 65537, 262166, 1, 65537, 262167, 1, 65537, 262168, 1, 3, 262169, 1, 131074, 393205, 1, 65536, 393206, 1, 65537, 393207, 1, 65537, 393208, 1, 65537, 393209, 1, 65537, 393210, 1, 65537, 393211, 1, 3, 393212, 1, 131074, 327693, 1, 0, 327694, 1, 65540, 327695, 1, 65537, 327696, 1, 65537, 327697, 1, 65537, 327698, 1, 65537, 327699, 1, 65537, 327700, 1, 65537, 327701, 1, 65537, 327702, 1, 65537, 327703, 1, 65537, 327704, 1, 65538, 458741, 1, 131072, 458742, 1, 131073, 458743, 1, 4, 458744, 1, 65537, 458745, 1, 65537, 458746, 1, 65537, 458747, 1, 65538, 393228, 1, 0, 393229, 1, 65540, 393230, 1, 65537, 393231, 1, 65537, 393232, 1, 65537, 393233, 1, 65537, 393234, 1, 65537, 393235, 1, 65537, 393236, 1, 65537, 393237, 1, 65537, 393238, 1, 65537, 393239, 1, 65537, 393240, 1, 65539, 393241, 1, 1, 393242, 1, 1, 393243, 1, 1, 393244, 1, 1, 393245, 1, 1, 393246, 1, 1, 393247, 1, 1, 393248, 1, 2, 524279, 1, 131072, 524280, 1, 131073, 524281, 1, 131073, 524282, 1, 4, 524283, 1, 65539, 524284, 1, 1, 524285, 1, 1, 524286, 1, 1, 524287, 1, 1, 458752, 1, 2, 458763, 1, 0, 458764, 1, 65540, 458765, 1, 65537, 458766, 1, 65537, 458767, 1, 65537, 458768, 1, 65537, 458769, 1, 65537, 458770, 1, 65537, 458771, 1, 65537, 458772, 1, 65537, 458773, 1, 65537, 458774, 1, 65537, 458775, 1, 65537, 458776, 1, 65537, 458777, 1, 65537, 458778, 1, 65537, 458779, 1, 65537, 458780, 1, 65537, 458781, 1, 65537, 458782, 1, 65537, 458783, 1, 65537, 458784, 1, 65538, 589818, 1, 131072, 589819, 1, 4, 589820, 1, 65537, 589821, 1, 65537, 589822, 1, 65537, 589823, 1, 65537, 524288, 1, 65539, 524289, 1, 1, 524290, 1, 1, 524291, 1, 2, 524299, 1, 65536, 524300, 1, 65537, 524301, 1, 3, 524302, 1, 131073, 524303, 1, 131073, 524304, 1, 131073, 524305, 1, 131073, 524306, 1, 131073, 524307, 1, 4, 524308, 1, 65537, 524309, 1, 65537, 524310, 1, 3, 524311, 1, 131073, 524312, 1, 131073, 524313, 1, 131073, 524314, 1, 131073, 524315, 1, 131073, 524316, 1, 131073, 524317, 1, 131073, 524318, 1, 131073, 524319, 1, 131073, 524320, 1, 131074, 655355, 1, 131072, 655356, 1, 131073, 655357, 1, 131073, 655358, 1, 131073, 655359, 1, 4, 589824, 1, 65537, 589825, 1, 65537, 589826, 1, 65537, 589827, 1, 65539, 589828, 1, 2, 589834, 1, 0, 589835, 1, 65540, 589836, 1, 65537, 589837, 1, 65538, 589843, 1, 65536, 589844, 1, 65537, 589845, 1, 65537, 589846, 1, 65538, 720895, 1, 65536, 655360, 1, 65537, 655361, 1, 65537, 655362, 1, 65537, 655363, 1, 65537, 655364, 1, 65539, 655365, 1, 1, 655366, 1, 1, 655367, 1, 1, 655368, 1, 1, 655369, 1, 1, 655370, 1, 65540, 655371, 1, 65537, 655372, 1, 3, 655373, 1, 131074, 655379, 1, 131072, 655380, 1, 4, 655381, 1, 3, 655382, 1, 131074, 786431, 1, 131072, 720896, 1, 131073, 720897, 1, 4, 720898, 1, 65537, 720899, 1, 65537, 720900, 1, 65537, 720901, 1, 65537, 720902, 1, 65537, 720903, 1, 65537, 720904, 1, 65537, 720905, 1, 65537, 720906, 1, 65537, 720907, 1, 65537, 720908, 1, 65538, 720916, 1, 65536, 720917, 1, 65538, 786433, 1, 65536, 786434, 1, 65537, 786435, 1, 65537, 786436, 1, 65537, 786437, 1, 65537, 786438, 1, 65537, 786439, 1, 65537, 786440, 1, 65537, 786441, 1, 65537, 786442, 1, 65537, 786443, 1, 65537, 786444, 1, 65538, 786452, 1, 65536, 786453, 1, 65538, 851969, 1, 65536, 851970, 1, 65537, 851971, 1, 65537, 851972, 1, 65537, 851973, 1, 65537, 851974, 1, 65537, 851975, 1, 65537, 851976, 1, 65537, 851977, 1, 65537, 851978, 1, 65537, 851979, 1, 65537, 851980, 1, 65538, 851988, 1, 65536, 851989, 1, 65538, 917505, 1, 65536, 917506, 1, 65537, 917507, 1, 65537, 917508, 1, 65537, 917509, 1, 65537, 917510, 1, 65537, 917511, 1, 65537, 917512, 1, 65537, 917513, 1, 65537, 917514, 1, 65537, 917515, 1, 65537, 917516, 1, 65538, 917524, 1, 65536, 917525, 1, 65538, 983041, 1, 131072, 983042, 1, 131073, 983043, 1, 131073, 983044, 1, 131073, 983045, 1, 131073, 983046, 1, 131073, 983047, 1, 131073, 983048, 1, 131073, 983049, 1, 131073, 983050, 1, 131073, 983051, 1, 131073, 983052, 1, 131074, 983059, 1, 0, 983060, 1, 65540, 983061, 1, 65538, 1048595, 1, 65536, 1048596, 1, 65537, 1048597, 1, 65538, 1048702, 1, 0, 1114131, 1, 65536, 1114132, 1, 65537, 1114133, 1, 65538, 1179667, 1, 65536, 1179668, 1, 65537, 1179669, 1, 65538, 1245203, 1, 65536, 1245204, 1, 65537, 1245205, 1, 65538, 1310739, 1, 131072, 1310740, 1, 131073, 1310741, 1, 131074, 2359449, 1, 0, 3538901, 1, 0 )
+
 [node name="music_track" parent="." instance=ExtResource( 6 )]
-music_track = "res://music/310-world-map-loop.ogg"
+music_track = "res://music/PastellSong_RougmixFull.ogg"
 
 [node name="UI" parent="." instance=ExtResource( 2 )]

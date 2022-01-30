@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/PastellSong_RougmixFull.ogg-b8288fbc78ac5ae77fd05a76d3b4a8d7.oggstr"
+
+[deps]
+
+source_file="res://music/PastellSong_RougmixFull.ogg"
+dest_files=[ "res://.import/PastellSong_RougmixFull.ogg-b8288fbc78ac5ae77fd05a76d3b4a8d7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
